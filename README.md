@@ -7,7 +7,7 @@ I have implemented this problem as a tree search problem where every level depic
 
 ## Code Structure
 I have created 4 classes:
-1. Firewall.java: This class reads the rules.csv and creates the map with the concatenation of direction and protocal as keys. It also maintains a list of rules in a string array list.
+1. Firewall.java: This class reads the rules.csv and creates the map with the concatenation of direction and protocal as keys. It also maintains a list of rules in a string array list. It then reads the input from input.csv and checks whether the packets are valid based on the rules in rules.csv.
 2. PortAndIPAddressVerification.java: This file has one public method for port verification and one internal implementation of subsequent ip address verification. Both the methods contain inner level logic for the string matching. All the methods are static and do not need class instantiation.
 3. GenerateTest.java: This java class is used for creating random test data. It makes sure the data created is valid and also contains ranges and single values. This same class can also be used for creating queries without having any range data. It requires the input of no. of queires to be created and whether these queries are for rules or are input queries.
 4. FirewallTest.java: Has unit tests using junit utility to make sure corner cases are covered and functionality is as expected.
