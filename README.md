@@ -12,6 +12,9 @@ I have created 4 classes:
 3. GenerateTest.java: This java class is used for creating random test data. It makes sure the data created is valid and also contains ranges and single values. This same class can also be used for creating queries without having any range data. It requires the input of no. of queires to be created and whether these queries are for rules or are input queries.
 4. FirewallTest.java: Has unit tests using junit utility to make sure corner cases are covered and functionality is as expected.
 
+## Executing the code
+```mvn clean install; java -cp target/my-firewall-app-1.0-SNAPSHOT.jar com.firewall.app.Firewall```
+
 ## Complexity
 In the worst case, all the rules might fall under one category. This would give complexity of O(n). Space complexity would be again 0(n) (to store all n rules). The reason I opted for this design is that, if hashing would have been used to keep all the unique combinations in the map then the space complexity would could been exponential. I wanted to implement a balance of both time and space complexity and opted for this approach.
 
