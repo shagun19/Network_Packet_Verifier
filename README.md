@@ -1,6 +1,4 @@
-# Illumio_Coding_Challenge
-
-This challenge was one of the most interesting and fun challenge to do. It involved design decisions, coding decisions, writing unit test cases, generating a test script for performance test cases and what not! After quite some time, I got the feel of how projects are to be made in industries where all the above requirements need to be fulfilled along with functionality. As a whole it was the most fun excerise. A little about my timing: developing the functionality took me close to 45 min. Writing junits and testscript took me 20 min. Remaining documentation took me 10 min. All together this took about 1 hour 15 min to complete.
+# Network Packet Verification System
 
  ## Design
 I have implemented this problem as a tree search problem where every level depicts one rule to be verified. First check would be whether the direction is inbound/outbound. Second is what protocol is being used. This gives us 4 unique combination to begin with (inbound/outbound/tcp/udp). For each combination I have created a list of ports followed by ip addresses and maintained it in a hashmap. Once check 1 and 2 are done, my program searches through the list of containing ports:ipAddresses. It then verifies whether the port is within the range or is equal to the one given in the rules. If the ports are matched then corresponding ip addresses are verified. This way at each level my program does verification.
